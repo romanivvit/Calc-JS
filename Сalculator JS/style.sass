@@ -21,7 +21,7 @@ body
     width: 1070px
     height: 650px
     border: 2px solid $active
-    margin: 0 auto
+    margin: 5% auto
     display: flex
     flex-direction: column
     align-items: center
@@ -44,10 +44,11 @@ body
         cursor: pointer
 .tab-left
     border-radius: 15px 0 0 0
-    background: linear-gradient(to top, #333, #333, #333,#333)
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7))
+    color: #cecece
 .tab-right
     border-radius: 0 15px 0 0     
-    background: linear-gradient(to top, #333, #333, #333,#333)
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.77))
     color: #cecece
 
 .active
@@ -96,9 +97,10 @@ body
         text-align: center
     &-block 
         text-align: left
-        input[type= "checkbox"]
-            width: 30px
+        input[type="checkbox"]
+            width: 24px
             height: 24px
+            opacity: .5
 .total  
     width: 60%
     display: flex
@@ -108,7 +110,7 @@ body
     color: #ffffff
     font-size: 36px
     font-weight: 700
-    &-count 
+.total-count 
         width: 200px
         height: 60px 
         background-color: transparent
